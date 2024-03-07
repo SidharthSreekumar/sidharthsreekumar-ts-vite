@@ -31,6 +31,9 @@
       &-details {
         display: none;
         flex-wrap: wrap;
+        @include media-sm-only {
+          flex-direction: column;
+        }
         justify-content: flex-start;
         gap: 1rem;
         background-color: darken($primary-dark, 2%);
@@ -40,6 +43,24 @@
         &.show {
           display: flex;
         }
+      }
+    }
+  }
+
+  @include media-sm-only {
+    .ptf-card {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      width: 100%;
+      padding-inline: 0;
+
+      .logo {
+        width: 3rem;
+        filter: grayscale(0);
+      }
+
+      .label {
+        border: none;
       }
     }
   }

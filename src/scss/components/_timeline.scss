@@ -2,9 +2,12 @@
   &-items {
     list-style-type: none;
     margin-block: 2rem;
-    padding-left: 2rem;
-    border-left: 3px solid grey;
-    margin-left: 11rem;
+    padding-left: 0;
+    @include media-sm {
+      padding-left: 2rem;
+      margin-left: 11rem;
+      border-left: 3px solid grey;
+    }
 
     li.timeline-item {
       margin-bottom: 2rem;
@@ -23,7 +26,8 @@
         &::before {
           content: '';
           position: absolute;
-          left: -4.8rem;
+          // margin-left: 11rem;
+          left: -99rem;
           top: -0.3rem;
           border: 0.3rem solid grey;
           background-color: $primary;
@@ -31,13 +35,20 @@
           height: 1.5rem;
           border-radius: 50%;
           transform: translate(-0.5px, 0.2em);
+          @include media-sm {
+            border-left: 3px solid grey;
+            left: -4.8rem;
+          }
         }
       }
 
       .date-interval {
-        position: absolute;
-        left: -13rem;
-        top: 0.7rem;
+        @include media-sm {
+          position: absolute;
+          left: -13rem;
+          top: 0.7rem;
+          max-width: 10rem;
+        }
       }
 
       &.ptf-card {
