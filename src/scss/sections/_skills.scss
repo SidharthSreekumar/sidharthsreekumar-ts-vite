@@ -13,6 +13,7 @@
       min-width: 16rem;
       .item {
         padding: 2rem;
+        cursor: pointer;
 
         &:hover {
           background-color: darken($primary-dark, 1%);
