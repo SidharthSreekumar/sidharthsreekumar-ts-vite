@@ -1,4 +1,6 @@
 import './scss/style.scss';
+import WAVES from 'vanta/dist/vanta.waves.min';
+
 
 window.onload = function () {
   const copyright = document.querySelector<HTMLSpanElement>('#copyright');
@@ -14,5 +16,22 @@ window.onload = function () {
 
   // Updating year in footer
   if (copyright)
-    copyright.innerHTML = `Copyright&nbsp;&copy; ` + new Date().getFullYear();
+  copyright.innerHTML = `Copyright&nbsp;&copy; ` + new Date().getFullYear();
+
+
+  // Waves Background
+  WAVES({
+    el: '#wavesBackground',
+    mouseControls: false,
+    touchControls: false,
+    gyroControls: false,
+    minHeight: 200.0,
+    minWidth: 200.0,
+    scale: 1.0,
+    scaleMobile: 1.0,
+    color: 0x151519,
+    shininess: 10,
+    waveHeight: 7.5,
+    waveSpeed: 0.65,
+  });
 };

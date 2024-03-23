@@ -126,3 +126,11 @@ html {
   scrollbar-color: $secondary #151519;
   scrollbar-width: auto;
 }
+
+/* Waves background */
+#wavesBackground {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
