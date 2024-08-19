@@ -6,11 +6,13 @@
     flex-direction: row;
     width: 100%;
     box-shadow: #50535b 0px 0px 10px 0px;
+
     .items {
       background-color: $primary-dark;
       border-radius: 0.5rem;
       width: max-content;
       min-width: 16rem;
+
       .item {
         padding: 2rem;
         cursor: pointer;
@@ -32,14 +34,17 @@
       &-details {
         display: none;
         flex-wrap: wrap;
-        @include media-sm-only {
-          flex-direction: column;
-        }
         justify-content: flex-start;
         gap: 1rem;
         background-color: darken($primary-dark, 2%);
         padding: 1rem;
         width: 100%;
+
+        @include media-sm-only {
+          flex-direction: column;
+        }
+
+
 
         &.show {
           display: flex;
