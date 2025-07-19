@@ -2,6 +2,8 @@ This is the repo for the personal portfolio website of Sidharth Sreekumar.
 
 Live deployment [sidharthsreekumar.dev](https://www.sidharthsreekumar.dev)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4467c6a2-3c79-441a-a54c-00f2ae75ad8d/deploy-status)](https://app.netlify.com/projects/sidharthsreekumar/deploys)
+
 ### Development
 Clone the repository (assuming you have git installed):
 ```
