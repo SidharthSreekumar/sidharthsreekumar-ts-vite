@@ -6,6 +6,17 @@
   .block-1 {
     .row-1 {
       margin-bottom: 4rem;
+
+      .warn-text {
+        color: orange;
+
+        a {
+          color: orangered;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
     }
   }
 
